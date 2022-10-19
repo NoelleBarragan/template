@@ -8,43 +8,23 @@
 public class RenameThisClass
 {
     public static void main(String[] args) {
-        int a = 5;
-        int b = 2;
-        int c = 1;
-        int d = -8;
+        int i = 0;
+        do {
+            int a3 = i / 3;
+            int a5 = i / 5;
+            float b3 = i / 3;
+            float b5 = i/5;
+            i +=1;
+            if (a3 == b3) {
+                System.out.println("Fizz");
+            }
+            if (a5 == b5) {
+                System.out.println("Buzz");
+            }
+            if (a5 == b5 && a3 == b3) {
+                System.out.println("FizzBuzz");
+            } else {System.out.println(i);}
+        } while (i <= 100);
 
-        if (a == 5) {
-            System.out.println("SUCCESS");
-
-        }
-        else {
-            System.out.println("FAILURE");  
-        }
-
-        if (b == 2) {
-            System.out.println("SUCCESS");
-        }
-        else {
-            System.out.println("FAILURE");
-        }
-
-        if (c != 1) {
-            System.out.println("SUCCESS");
-        }
-        else {
-            System.out.println("FAILURE");
-        }
-
-        if (d == -8 && a == 4) {
-            System.out.println("SUCCESS");
-        }
-        else {
-            System.out.println("FAILURE");
-        }
-
-        
-        }
-
-        
     }
-
+}
